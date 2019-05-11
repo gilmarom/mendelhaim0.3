@@ -1,0 +1,14 @@
+[
+  { "id": 1, "name": "Prof. Daniel Michalson", "video":"./assets/anat.mp4", "category":"alzhimer", "details":"We work on alzhaimer gene Epo4", "lab":"Tel aviv" },
+  { "id": 2,  "name": "Dr. Gordon Lithgow", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"alzhimer", "details":"we work on alzhaimer gene Epo4","lab":"Buck institute"   },
+  { "id": 3,  "name": "Md Nir Barzilai", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s" , "category": "parkinson", "details":"we work on alzhaimer gene Epo4","lab":"NYU"  },
+  { "id": 4,  "name": "Celeritas", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"parkinson", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv"  },
+  { "id": 5,  "name": "Magneta" , "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"parkinson", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv" },
+  { "id": 6,  "name": "RubberMan", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"sarcopenia", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv"},
+  { "id": 7,  "name": "Dynama", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"sarcopenia", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv" },
+  { "id": 8,  "name": "Dr Iq", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"sarcopenia", "details":"we work on alzhaimer gene Epo4" ,"lab":"Tel aviv"},
+  { "id": 9,  "name": "Magma", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"sarcopenia", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv" },
+  { "id": 10,  "name": "Tornado", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"alzhimer", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv" },
+   { "id": 11,  "name": "Magma", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"parkinson", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv" },
+  { "id": 12,  "name": "Tornado", "video":"https://www.youtube.com/v/T5VFE7-unyw&t=17s", "category":"alzhimer", "details":"we work on alzhaimer gene Epo4","lab":"Tel aviv" }
+]

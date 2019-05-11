@@ -1,0 +1,39 @@
+<br>
+
+<br>
+<br>
+<br>
+<div class="example">
+
+<div>Donate</div>
+
+<button class="donate" title="Donate"><a routerLink="/donate/{{research.id}}"><img src='assets/donate.png' width="48" height="48"></a></button>  
+
+<div *ngIf="research" >
+  <div>
+  <h2>Research in {{ research.category }}</h2>
+   <br>
+  <h3>{{research.name | uppercase}}</h3>
+  
+  
+<p>{{research.details}}</p>
+  <div>
+    <label>Lab name:<strong> {{ research.lab }}</strong>
+          
+    </label>
+  </div>
+</div>
+</div>
+</div>
+<br>
+ <section class="example">
+<object width="420" height="315"
+data= "https://www.youtube.com/v/T5VFE7-unyw&t=17s" >
+
+</object>
+<br>
+<br>
+<button class="list" (click)="goBack()">Back to list</button>
+ </section>
+<footer style="height:200px;"></footer>
+

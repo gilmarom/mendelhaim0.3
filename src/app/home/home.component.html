@@ -1,0 +1,101 @@
+
+
+<div  *ngIf="carousela" >
+  <ngb-carousel>        
+    <ng-template ngbSlide class="v-header container">
+            <header class="v-header container">               
+              <div class="fullscreen-video-wrap">    
+              <video autoplay='true' loop='loop'  [muted]='true' >
+                <source src="../assets/Space.mp4"  type="video/mp4">
+              </video>
+              </div> 
+           </header> 
+           <a routerLink='/podcast'><div class="header-overlay" style="background-color: #66ffff;opacity:0.5;" ></div></a>
+         <div id='text'><a routerLink='/podcast'> <div >
+               {{carousela[0].text}}</div><br>
+             <div id='butText'>{{ carousela[0].buttonText }}<img class="play" src="assets/play-white.png"></div></a>      
+         </div>
+     </ng-template>
+     <ng-template ngbSlide style="position:absolute;">
+            <header class="v-header container">               
+              <div  class="fullscreen-video-wrap">    
+              <video autoplay='true' loop='loop'  [muted]='true' >
+                <source src="../assets/hyperberic.mp4"  type="video/mp4">
+              </video>
+              </div> 
+            </header> 
+            <a routerLink='/podcast/2'><div class="header-overlay" style="background-color: #0A2B30;opacity:0.8;" ></div></a>
+            <div id='text'> <a routerLink='/podcast/2'> <div>
+               {{carousela[1].text}}</div><br>
+               <div id='butText'>{{ carousela[1].buttonText }}<img class="play" src="assets/play-white.png"></div>  
+               </a>    
+           </div>
+      </ng-template>
+     
+        <ng-template ngbSlide style="position:absolute;">
+        
+           <header class="v-header container">               
+              <div  class="fullscreen-video-wrap">   
+            <video autoplay='true' loop='loop'  [muted]='true' >
+                <source src="../assets/cell.mp4"  type="video/mp4" style="transform: scale(1.05);">
+             </video>
+          </div>
+           </header> 
+               <a href='/about'> <div class="header-overlay" style="background-color:#DACB0D;opacity:0.7;"></div></a>    
+         
+         <div id='text'>
+            <a href='/about'>
+           <div>
+               {{carousela[2].text}}</div><br>
+             <div id='butText'>{{ carousela[2].buttonText }}<span><img class="play" src="assets/play-white.png"></span></div>
+            </a> 
+             </div>   
+           
+        </ng-template>
+        <ng-template ngbSlide style="position:absolute;">
+         <header class="v-header container">               
+              <div  class="fullscreen-video-wrap">             
+                   <video  autoplay='true' loop='loop' [muted]='true' >
+                   <source src="../assets/Beach.mp4"  type="video/mp4">
+                   </video>
+              </div>
+         </header>
+         <a  routerLink='/research'>  <div class="header-overlay" style="background-color: #66ffff;opacity:0.5;"></div></a>
+         <div id='text'>  <a routerLink='/research'><div>
+               {{carousela[3].text}}</div><br>
+             <div id='butText'>{{ carousela[3].buttonText }}<span><img class="play" src="assets/play-white.png"></span></div></a></div>   
+        </ng-template></ngb-carousel>
+</div>
+
+<!--<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+      <ngb-carousel>
+        <ng-template ngbSlide>
+          <img src="assets/cell.png" alt="Random first slide">
+          <div class="carousel-caption">
+            <h3>10 seconds between slides...</h3>
+            <p>This carousel uses customized default values.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <img src="assets/donate.png"  alt="Random second slide">
+          <div class="carousel-caption">
+            <h3>No keyboard...</h3>
+            <p>This carousel uses customized default values.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <img src="assets/bg.jpg" alt="Random third slide">
+          <div class="carousel-caption">
+            <h3>And no wrap after last slide.</h3>
+            <p>This carousel uses customized default values.</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>    </div>
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>!-->

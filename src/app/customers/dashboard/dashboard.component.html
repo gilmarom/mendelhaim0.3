@@ -1,0 +1,56 @@
+
+
+
+
+
+
+<div class="profile"><img src='assets/user.ico' width="50px" height="50px">
+    <div class="content">
+        Welcome,  {{ userDetails.labName }}, 
+        <a href="javascript:void(0);" (click)="onLogout()">Logout</a>
+    </div>
+   
+     
+</div>
+<div class="dashboard">
+  
+
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div>
+               <label>Total amount of rasing</label><br>
+            <div style="width:300px;" *ngFor="let rec of dashboardData">{{ rec.total }} $</div>  
+            {{ userDetails.labName }},
+            </div>
+            <br>
+            <label>Add content</label>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <input type="file" name="image"  />
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+          
+        </div>
+       
+    </div>
+</div> 
+<div class="container">
+       
+</div>
+</div>
+<script>
+ document.getElementsByClassName('nav').onload.
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //Add your code here to run after fully page load
+        document.getElement("nav").style.background-color = 'white';
+    });
+</script>

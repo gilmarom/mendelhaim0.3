@@ -1,0 +1,109 @@
+.example {
+display: flex;
+flex-direction: column;
+align-items: center;
+color: rgba(57, 94, 102, 1);
+z-index: 2;
+opacity: 1;
+position: relative;
+top:100px;
+}
+
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+footer{
+    background-color:  #607d8b;
+    height: 200px;
+    position: absolute;
+
+}
+a {
+  text-decoration: none;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1{
+  font-weight: 700;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+h4 {
+  position: relative;
+}
+p{font-size:18px;}
+.grid {
+ 
+}
+.col-1-4 {
+  width: 30%;
+  padding: 2.5%;
+}
+.module {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  max-height: 120px;
+  
+  background-color: #607d8b;
+  border-radius: 2px;
+  height: 300px;
+}
+.module:hover {
+  background-color: #eee;
+  cursor: pointer;
+  color: #607d8b;
+}
+.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height:  100px;
+    height: 350px;
+    
+    }
+  .example{padding: 2%;}
+    .col-1-4 {
+      width: 50%;
+    
+   }
+  }
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+    height: 450px;
+  }
+}
+

@@ -1,0 +1,25 @@
+ 
+<div class="bg" [ngStyle]=" {'background':podcast.background}"*ngIf="podcast">
+     <h2 class="main">Rise of The Ageless Starman</h2> 
+     
+     <img src='{{podcast.pic}}'>
+     <div class="details">
+        <p>Episode {{podcast.id}}: {{ podcast.name}}<br> With {{ podcast.particpate }}</p>
+        <span><a (click)="toggle()"><img class='play' [src]="image" ></a></span> 
+    </div>     
+</div>
+<div *ngIf="podcast" class="brief" id='player'> 
+      <div *ngIf="show_dialog">
+        <audio controls autoplay style="height:20px;width:80%;">
+          <source src="{{podcast.pod}}">          
+        </audio>
+     </div>  
+      <br><br>  <br> 
+      <p><strong>{{ podcast.particpate}}</strong> - {{ podcast.pro}} </p>
+      <br><br>
+      <p>{{ podcast.brief }}</p>
+       <img class='credit' src='{{podcast.credit}}'> 
+  </div>
+    
+  
+ 
