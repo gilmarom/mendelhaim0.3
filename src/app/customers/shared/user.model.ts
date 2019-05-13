@@ -3,4 +3,5 @@ export class User {
     email: string; 
     password: string;
     labName: string;
+    labId:string;
 }

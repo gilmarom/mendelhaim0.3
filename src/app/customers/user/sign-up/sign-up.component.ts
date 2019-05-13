@@ -41,7 +41,8 @@ export class SignUpComponent implements OnInit {
       fullName: '',
       email: '',
       password: '',
-      labName:''
+      labName:'',
+      labId:''
     };
     form.resetForm();
     this.serverErrorMessages = '';

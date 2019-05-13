@@ -23,18 +23,18 @@ let DashboardSchema = new Schema({
 });
 
 var dashboardModel = mongoose.model('Dashboard' , DashboardSchema);
-
+//db.donation.aggregate([{$match:{"$amount":"5"},{ $group: { _id: "rasing", total: { $sum: "$amount" } } }])//
 /* total amount raised */
 dashboardRouter.route('/').get(function (req, res) {
 
-   console.log(req.session.user.email,"hellooooooooooooooooooooooooooooooooooooo");
-   dashboardModel.aggregate([{ $group: { _id: "rasing", total: { $sum: "$amount" } } }], function (err, data) {
+   console.log(req.session.user.email, req.session.user.labId ,"hellooooooooooooooooooooooooooooooooooooo");
+   dashboardModel.aggregate([{$match:{"labId": req.session.user.labId}}, { $group: { _id: "rasing", total: { $sum: "$amount" } } }], function (err, data) {
         if (err) {
             console.log(err);
             return;
         }
       
-   console.log(res);
+  
    res.json(data);
 });
 });

@@ -7,7 +7,7 @@ let DonationSchema = new Schema({
     amount: {type: Number, required: true},
     phone:{type:String },
     creditNum: { type:String, required:true},
-    labId: { type:String, required:true },
+    labId: { type:Number, required:true },
     creditNum:{type: Number},
     expYear:{type: String},
     expMonth:{type: String},

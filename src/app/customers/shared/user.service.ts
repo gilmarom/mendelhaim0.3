@@ -13,6 +13,7 @@ export class UserService {
     email: '',
     password: '',
     labName:'',
+    labId:''
   };
 
   noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
