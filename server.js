@@ -1,7 +1,7 @@
 
-require('./config/config');
-require('./models/db');
-require('./config/passportConfig');
+//require('./config/config');
+//require('./models/db');
+//require('./config/passportConfig');
 const express = require('express');
 const path = require('path');
 const http = require('http');//.Server(app);
@@ -18,22 +18,22 @@ const Grid = require('gridfs-stream');
 const methodOverride = require('method-override');
 
 const rtsIndex = require('./routes/index');
-const donate = require('./routes/donation');
+//const donate = require('./routes/donation');
 const about = require('./routes/about');
-const contactRoute = require('./routes/contact');
-const donationRoute = require('./routes/donation'); 
-const dashboardRoute = require('./routes/dashboard');
+//const contactRoute = require('./routes/contact');
+//const donationRoute = require('./routes/donation'); 
+//const dashboardRoute = require('./routes/dashboard');
 
 const mongoose = require('mongoose');
 const cors = require('cors');
 var session = require('express-session');
 var passport = require('passport');
 
-config = require('./DB');
+//config = require('./DB');
  
 //mongoose.Promise = require('bluebird');
 //mongoose.connect(config.DB, { promiseLibrary: require('bluebird')})
- // .then((res) => console.log('connection succesful')).catch((err) => console.error(err));
+ //.then((res) => console.log('connection succesful')).catch((err) => console.error(err));
 //var db = mongoose.connection;
 let gfs;
 
@@ -68,9 +68,9 @@ app.use(express.static(path.join(__dirname, 'dist/client')));
 app.use('/', express.static(path.join(__dirname, 'dist')));
 app.use('/',rtsIndex );
 app.use('/about',about );
-app.use('/contact',contactRoute);
-app.use('/donate/:id', donationRoute);
-app.use('/dashboard', dashboardRoute,rtsIndex);
+//app.use('/contact',contactRoute);
+//app.use('/donate/:id', donationRoute);
+//app.use('/dashboard', dashboardRoute,rtsIndex);
 
 
 

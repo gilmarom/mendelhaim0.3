@@ -33,6 +33,7 @@ import { UserService } from './customers/shared/user.service';
 //other
 import { AuthGuard } from './customers/auth/auth.guard';
 import { AuthInterceptor } from './customers/auth/auth.interceptor';
+import { TryComponent } from './try/try.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import { AuthInterceptor } from './customers/auth/auth.interceptor';
     UserComponent,
     SignUpComponent,
     UserProfileComponent,
-    SignInComponent
+    SignInComponent,
+    TryComponent
   ],
   imports: [
     BrowserModule,

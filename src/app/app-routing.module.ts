@@ -10,6 +10,7 @@ import { PlayComponent } from './play/play.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './customers/dashboard/dashboard.component';
 
+import { TryComponent } from './try/try.component';
 
 import { UserComponent } from './customers/user/user.component';
 import { SignUpComponent } from './customers/user/sign-up/sign-up.component';
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: 'podcast', component: PodcastComponent },
   { path: 'podcast/:id', component: PlayComponent },
   { path: 'contact', component:ContactComponent},
-  { path: 'dashboard', component:DashboardComponent}
+  { path: 'dashboard', component:DashboardComponent},
+  { path: 'try', component: TryComponent}
 ];
 
 
