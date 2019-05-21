@@ -54,11 +54,11 @@ app.use(session({secret:'app12123e', resave:false,saveUninitialized:true}));
 app.use(passport.initialize());
 app.use(passport.session());
 // [SH] Bring in the data model
-require('./models/db');
+//require('./models/db');
 
 
 
-var routesApi = require('./routes/users');
+//var routesApi = require('./routes/users');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
